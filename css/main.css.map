@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": ";ACYA,wEAAwE;AACxE,2CAA2C;AAC3C,6CAA6C;AAC7C,uDAAuD;AACvD,sCAAsC;AACtC,mEAAmE;AAEnE,yEAAyE;AACzE,2DAA2D;AAC3D,4CAA4C;AErB5C,AAAA,gBAAgB,CAAC;EACf,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,aAAa;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,QAAQ,EAAE,MAAM;CACjB;;ACTD,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AACD,AAAA,KAAK,CAAC;EACJ,KAAK,EHNS,OAAO;EGOrB,WAAW,EAAE,kBAAkB;EAC/B,cAAc,EAAE,MAAM;CACvB;;AACD,AAAA,QAAQ,CAAC;EACP,WAAW,EAAE,IAAI;EAEjB;;;;;;;;KAQG;CACJ;;AAED,AAAA,UAAU,CAAC;EAET,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,aAAa,EAAE,IAAI;EACnB,YAAY,EAAE,IAAI;EAClB,MAAM,EAAE,iBAAiB;CAa1B;;AAXC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EARrC,AAAA,UAAU,CAAC;IASP,KAAK,EAAE,KAAK;GAUf;;;AARC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAXrC,AAAA,UAAU,CAAC;IAYP,KAAK,EAAE,KAAK;GAOf;;;AALC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAdtC,AAAA,UAAU,CAAC;IAeP,WAAW,EAAE,IAAI;IACjB,cAAc,EAAE,IAAI;IACpB,KAAK,EAAE,MAAM;GAEhB;;;AC3CD,AAAA,KAAK,CAAC;EACJ,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,mBAAmB;EAChC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,MAAM;CAYvB;;AAVE,AAAD,UAAM,CAAC;EACL,KAAK,EJPK,OAAO;CIQlB;;AAEA,AAAD,WAAO,CAAC;EACN,KAAK,EJTK,OAAO;CIUlB;;AACA,AAAD,WAAO,CAAC;EACN,KAAK,EJbK,OAAO;CIclB;;ALJH;+BAC+B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/utils/_visually-hidden.scss",
+        "../sass/components/_common2.scss",
+        "../sass/components/_logo.scss",
+        "../sass/components/_header-nav2.scss",
+        "../sass/components/_header-contacts2.scss",
+        "../sass/components/_section-benefits2.scss",
+        "../sass/components/_section-business2.scss",
+        "../sass/components/_section-clients2.scss",
+        "../sass/components/_section-team2.scss",
+        "../sass/components/_footer2.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

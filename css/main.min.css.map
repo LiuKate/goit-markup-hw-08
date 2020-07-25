@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,gBAAgB,AAAC,CACf,QAAQ,CAAE,QAAQ,CAClB,IAAI,CAAE,aAAa,CACnB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,IAAI,CACZ,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,QAAQ,CAAE,MAAM,CACjB,ACTD,AAAA,KAAK,AAAC,CACJ,UAAU,CAAE,IAAI,CAChB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACX,AACD,AAAA,KAAK,AAAC,CACJ,KAAK,CHNS,OAAO,CGOrB,WAAW,CAAE,kBAAkB,CAC/B,cAAc,CAAE,MAAM,CACvB,AACD,AAAA,QAAQ,AAAC,CACP,WAAW,CAAE,IAAI,CAWlB,AAED,AAAA,UAAU,AAAC,CAET,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACpB,aAAa,CAAE,IAAI,CACnB,YAAY,CAAE,IAAI,CAClB,MAAM,CAAE,iBAAiB,CAa1B,AAXC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,EARrC,AAAA,UAAU,AAAC,CASP,KAAK,CAAE,KAAK,CAUf,CARC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,EAXrC,AAAA,UAAU,AAAC,CAYP,KAAK,CAAE,KAAK,CAOf,CALC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM,EAdtC,AAAA,UAAU,AAAC,CAeP,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACpB,KAAK,CAAE,MAAM,CAEhB,CC3CD,AAAA,KAAK,AAAC,CACJ,eAAe,CAAE,IAAI,CACrB,WAAW,CAAE,mBAAmB,CAChC,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,cAAc,CAAE,MAAM,CAYvB,AAVE,AAAD,UAAM,AAAC,CACL,KAAK,CJPK,OAAO,CIQlB,AAEA,AAAD,WAAO,AAAC,CACN,KAAK,CJTK,IAAO,CIUlB,AACA,AAAD,WAAO,AAAC,CACN,KAAK,CJbK,IAAO,CIclB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/utils/_visually-hidden.scss",
+        "../sass/components/_common2.scss",
+        "../sass/components/_logo.scss",
+        "../sass/components/_header-nav2.scss",
+        "../sass/components/_header-contacts2.scss",
+        "../sass/components/_section-benefits2.scss",
+        "../sass/components/_section-business2.scss",
+        "../sass/components/_section-clients2.scss",
+        "../sass/components/_section-team2.scss",
+        "../sass/components/_footer2.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

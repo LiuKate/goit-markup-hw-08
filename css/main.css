@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* color: #212121 - черный на ссылке портфолио и пр - secondary color */
+/* color: #757575 - серый - primary color*/
+/* color: #2196F3 - синий на лого - accent */
+/* color: #FFFFFF - белый на герое и ссылках - white */
+/* color: #000000 - черный на лого  */
+/*color: rgba(255, 255, 255, 0.6) - белый в футере - white-footer*/
+/* background: rgba(47, 48, 58, 0.8) - темно-серый -bgr color secondary*/
+/* background: #F5F4FA - светло-серый - bgr color primary*/
+/* background: #2F303A - бэкграунд футера */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  color: #757575;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.section {
+  padding-top: 94px;
+  /*&-name {
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 0 50px 0;
+  }*/
+}
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px auto 0px auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: #2196f3;
+}
+
+.logo-black {
+  color: #000000;
+}
+
+.logo-white {
+  color: #ffffff;
+}
+
+/*@import "./components/hero";
+@import "./components/modal";*/
+/*# sourceMappingURL=main.css.map */
