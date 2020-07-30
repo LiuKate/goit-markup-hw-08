@@ -1,0 +1,41 @@
+.business-container {
+  @media screen and (max-width: 1199px) {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.business {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+
+  &-image {
+    display: block;
+    margin: 0;
+  }
+  &-item {
+    color: $color-white;
+    position: relative;
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 30px * 2) / 3);
+    }
+    &-name {
+      background-color: $brg-secondary;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 27px 0 27px 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

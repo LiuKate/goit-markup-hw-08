@@ -1,0 +1,38 @@
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  &-logo {
+    @extend %flex-center;
+    height: 90px;
+    color: $color-icon;
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $accent-blue;
+      border: 1px solid $accent-blue;
+    }
+  }
+}
+
+.clients-logo-block {
+  width: calc((100% - 30px * 2) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 3) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 6) / 6);
+  }
+}
+
+.icon-logo {
+  fill: currentColor;
+}

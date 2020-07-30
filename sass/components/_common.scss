@@ -1,0 +1,42 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  color: $primary-color;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.section-name {
+  color: $secondary-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  padding: 60px 15px 60px 15px;
+
+  @media screen and(min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+  }
+}

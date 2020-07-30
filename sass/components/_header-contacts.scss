@@ -1,0 +1,36 @@
+/*.site-header .container {
+  display: flex;
+  align-items: center;
+}*/
+
+.contacts {
+  /*display: flex;*/
+
+  &-header {
+    margin-left: auto;
+  }
+
+  &-icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+.contacts-item a {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-item :hover,
+.contacts-item :focus {
+  color: $accent-blue;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
+}

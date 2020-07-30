@@ -1,0 +1,96 @@
+.team {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-member {
+    background-color: $color-white;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 1px 3px rgba(0, 0, 0, 0.12);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px * 2) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 30px * 4) / 4);
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-profession {
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin: 0 0 16px 0;
+    }
+    &-name {
+      color: $secondary-color;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.our-team {
+  background-color: $bgr-primary;
+  padding-bottom: 94px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.links {
+  @extend %flex-center;
+  margin-bottom: 24px;
+}
+.team-links {
+  @extend %flex-center;
+  width: 44px;
+  height: 44px;
+  color: $color-icon;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $bgr-accent;
+    color: $color-white;
+    border-radius: 50%;
+  }
+
+  &-icon {
+    fill: currentColor;
+    padding: 0;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

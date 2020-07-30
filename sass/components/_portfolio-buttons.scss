@@ -1,0 +1,30 @@
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+  color: $secondary-color;
+  cursor: pointer;
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-list {
+    /*@extend %flex-center;
+
+    margin-bottom: 50px;
+    padding-left: 0;
+    margin-right: 0;*/
+    & :hover,
+    & :focus {
+      background-color: $bgr-accent;
+      color: $color-white;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

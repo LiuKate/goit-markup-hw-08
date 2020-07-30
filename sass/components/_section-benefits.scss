@@ -1,0 +1,74 @@
+.benefits {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-image {
+    padding: 25px 100px;
+    background-color: $bgr-primary;
+    margin-bottom: 30px;
+  }
+
+  &-list {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px * 2) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 30px * 4) / 4);
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-name {
+      color: $secondary-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 480px) {
+        & {
+          text-align: center;
+        }
+      }
+    }
+
+    &-description {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin: 0;
+    }
+  }
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+
+  &-block {
+    @extend %flex-center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $bgr-primary;
+  }
+}
