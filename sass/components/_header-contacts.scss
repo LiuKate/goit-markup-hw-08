@@ -1,10 +1,7 @@
-/*.site-header .container {
-  display: flex;
-  align-items: center;
-}*/
-
 .contacts {
-  /*display: flex;*/
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   &-header {
     margin-left: auto;
@@ -20,17 +17,44 @@
   color: $primary-color;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts-item :hover,
 .contacts-item :focus {
   color: $accent-blue;
 }
-.contacts-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-header {
+    padding-top: 60px;
+  }
+  .nav {
+    padding-top: 60px;
+  }
+  .nav-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

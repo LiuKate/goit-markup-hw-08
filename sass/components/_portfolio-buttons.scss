@@ -10,15 +10,21 @@
   cursor: pointer;
 
   &-item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   &-list {
-    /*@extend %flex-center;
+    display: flex;
+    flex-wrap: wrap;
 
     margin-bottom: 50px;
     padding-left: 0;
-    margin-right: 0;*/
+    margin-right: 0;
     & :hover,
     & :focus {
       background-color: $bgr-accent;

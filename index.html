@@ -14,7 +14,7 @@
   <body class="body">
     <header class="site-header">
       <div class="container">
-        <div>
+        <div class="button-container">
           <a href="./index.html" class="logo">
             <span class="logo-blue">Web</span>
             <span class="logo-black">Studio</span>
@@ -23,6 +23,7 @@
             type="button"
             class="menu-button is-open"
             aria-expanded="false"
+            aria-controls="menu-container"
             data-menu-button
           >
             <svg
@@ -41,7 +42,7 @@
             </svg>
           </button>
         </div>
-        <div class="menu-container">
+        <div class="menu-container is-open" id="menu-container" data-menu>
           <nav class="nav">
             <div>
               <ul class="site-nav list">
