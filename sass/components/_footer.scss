@@ -4,25 +4,54 @@
 
 .footer-container {
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 15px 60px 15px;
 
-  /*display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 1200px) {
-    align-items: center;
-  }*/
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 1200px;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .block-for-tablet {
+@media screen and (max-width: 767px) {
+  .block-adress {
+    padding-bottom: 60px;
+  }
+  .block-join {
+    padding-bottom: 60px;
+  }
+  .block-sign {
+    padding-bottom: 60px;
+  }
+}
+
+.block-for-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
 
-  .block-sign {
+.block-sign {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;
+  }
+}
+.block-adress {
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
   }
 }
 .adress-main {
@@ -57,20 +86,13 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 767px) {
-  .block-adress {
-    padding-bottom: 60px;
-  }
-  .block-join {
-    padding-bottom: 60px;
-  }
-  .block-sign {
-    padding-bottom: 60px;
+  margin: 0 0 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
+
 /* width: calc((100% - 60px) / 4);
 }
 .block-adress {
@@ -89,12 +111,19 @@
   text-transform: uppercase;
   margin: 0;
 
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin: 0 0 20px;
+  }
+
   &-input {
     width: 100%;
     max-width: 450px;
     height: 50px;
-    margin: 20px 0;
 
+    @media screen and (max-width: 1199px) {
+      margin: 20px 0;
+    }
     /*padding: 15px 16px;*/
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -103,7 +132,7 @@
     background-color: $bgr-footer;
 
     @media screen and (min-width: 1200px) {
-      max-width: 358px;
+      width: 358px;
     }
   }
   &-form {
@@ -161,8 +190,10 @@
   border-color: $accent-blue;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 
-  /*margin-left: 12px;
-  padding: 13px 29px;*/
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    padding: 13px 29px;
+  }
   &:hover {
     cursor: pointer;
   }
