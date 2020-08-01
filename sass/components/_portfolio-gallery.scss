@@ -1,9 +1,7 @@
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: -15px;
   }
@@ -13,8 +11,8 @@
     top: 0;
     left: 0;
 
-    /*width: 370px;
-    height: 100%;*/
+    width: 100%;
+    height: 100%;
     background-color: $bgr-accent;
 
     transform: translateY(100%);
@@ -23,13 +21,14 @@
 }
 
 .section-portfolio {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-image {
-  display: block;
-  width: 100%;
-  height: auto;
   margin: 0;
 
   &-overlay {

@@ -5,6 +5,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  fill: currentColor;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -21,6 +22,15 @@
 
 .menu-button.is-open .icon-nav-menu {
   display: none;
+}
+
+.menu-button.is-open .icon-nav-close:focus,
+.icon-nav-close:hover {
+  fill: $accent-blue;
+}
+.menu-button .icon-nav-menu:focus,
+.icon-nav-menu:hover {
+  fill: $accent-blue;
 }
 
 @media screen and (max-width: 767px) {
@@ -47,6 +57,7 @@
 
     &.is-open {
       display: block;
+      z-index: 98;
     }
   }
   @media screen and (min-width: 768px) {

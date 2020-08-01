@@ -83,6 +83,12 @@
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .logo {
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -137,11 +143,14 @@
   }*/
 /*align-items: center;*/
 .nav-item {
-  position: relative;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-item-link {
-  display: block;
+  position: relative;
   color: #212121;
   text-decoration: none;
   font-weight: 500;
@@ -275,6 +284,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -293,6 +303,16 @@
 
 .menu-button.is-open .icon-nav-menu {
   display: none;
+}
+
+.menu-button.is-open .icon-nav-close:focus,
+.icon-nav-close:hover {
+  fill: #2196f3;
+}
+
+.menu-button .icon-nav-menu:focus,
+.icon-nav-menu:hover {
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -322,6 +342,7 @@
   }
   .menu-container.is-open {
     display: block;
+    z-index: 98;
   }
 }
 
@@ -354,10 +375,8 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .button-item:not(:last-child) {
-    margin-right: 8px;
-  }
+.button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -385,19 +404,13 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media screen and (min-width: 768px) {
   .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -409,8 +422,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  /*width: 370px;
-    height: 100%;*/
+  width: 100%;
+  height: 100%;
   background-color: #2196f3;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -421,13 +434,16 @@
 }
 
 .section-portfolio {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-image {
-  display: block;
-  width: 100%;
-  height: auto;
   margin: 0;
 }
 
