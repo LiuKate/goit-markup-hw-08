@@ -243,7 +243,11 @@
             <li class="business-item">
               <img
                 class="business-image"
-                src="./images/Laptop.png"
+                src="./images/JPG/1200-Portfolio_9(Laptop).jpg"
+                srcset="
+                  ./images/JPG/1200-Portfolio_9(Laptop).jpg    1x,
+                  ./images/JPG/1200-Portfolio_9(Laptop)@2x.jpg 2x
+                "
                 alt="Фото ноутбука"
                 width="370"
               />
@@ -252,7 +256,11 @@
             <li class="business-item">
               <img
                 class="business-image"
-                src="./images/Phone.png"
+                src="./images/JPG/1200-Phone.jpg"
+                srcset="
+                  ./images/JPG/1200-Phone.jpg    1x,
+                  ./images/JPG/1200-Phone@2x.jpg 2x
+                "
                 alt="Фото телефона"
                 width="370"
               />
@@ -261,7 +269,11 @@
             <li class="business-item">
               <img
                 class="business-image"
-                src="./images/Monitor.png"
+                src="./images/JPG/1200-Portfolio_6(Monitor).jpg"
+                srcset="
+                  ./images/JPG/1200-Portfolio_6(Monitor).jpg    1x,
+                  ./images/JPG/1200-Portfolio_6(Monitor)@2x.jpg 2x
+                "
                 alt="Фото монитора"
                 width="370"
               />
@@ -276,11 +288,28 @@
           <h2 class="section-name">Наша команда</h2>
           <ul class="team list">
             <li class="team-member">
-              <img
-                src="./images/Продукт_Дизайнер.png"
-                alt="Фото дизайнера"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/JPG/1200-Продукт_Дизайнер.jpg    1x,
+                    ./images/JPG/1200-Продукт_Дизайнер@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source srcseJPG/768-Продукт_Дизайнер@2x.jpg 2x "
+                media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/JPG/480-Продукт_Дизайнер.jpg    1x,
+                    ./images/JPG/480-Продукт_Дизайнер@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  alt="Фото дизайнера"
+                  src="./images/JPG/480-Продукт_Дизайнер.jpg"
+                />
+              </picture>
               <h3 class="team-member-name">Николай Кучеренко</h3>
               <p class="team-member-profession">Product Designer</p>
               <ul class="links list">
@@ -315,11 +344,33 @@
               </ul>
             </li>
             <li class="team-member">
-              <img
-                src="./images/Фронт-энд.png"
-                alt="Фото фронт-энд разработчика"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/JPG/1200-Фронт-энд.jpg    1x,
+                    ./images/JPG/1200-Фронт-энд@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/JPG/768-Фронт-энд.jpg    1x,
+                    ./images/JPG/768-Фронт-энд@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/JPG/480-Фронт-энд.jpg    1x,
+                    ./images/JPG/480-Фронт-энд@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/JPG/480-Фронт-энд.jpg"
+                  alt="Фото фронт-энд разработчика"
+                />
+              </picture>
               <h3 class="team-member-name">Ольга Иванова</h3>
               <p class="team-member-profession">Frontend Developer</p>
               <ul class="links list">
@@ -354,11 +405,34 @@
               </ul>
             </li>
             <li class="team-member">
-              <img
-                src="./images/Маркетинг.png"
-                alt="Фото маркетолога"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/JPG/1200-Маркетинг.jpg    1x,
+                    ./images/JPG/1200-Маркетинг@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/JPG/768-Маркетинг.jpg    1x,
+                    ./images/JPG/768-Маркетинг@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/JPG/480-Маркетинг.jpg    1x,
+                    ./images/JPG/480-Маркетинг@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/JPG/480-Маркетинг.jpg"
+                  alt="Фото маркетолога"
+                />
+              </picture>
               <h3 class="team-member-name">Андрей Шевченко</h3>
               <p class="team-member-profession">Marketing</p>
               <ul class="links list">
@@ -393,11 +467,34 @@
               </ul>
             </li>
             <li class="team-member">
-              <img
-                src="./images/UI_Дизайнер.png"
-                alt="Фото дизайнера UI"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/JPG/1200-UI_Дизайнер.jpg    1x,
+                    ./images/JPG/1200-UI_Дизайнер@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/JPG/768-UI_Дизайнер.jpg     1x,
+                    ./images/JPG/768-UI_Дизайнерг@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/JPG/480-UI_Дизайнер.jpg    1x,
+                    ./images/JPG/480-UI_Дизайнер@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/JPG/480-UI_Дизайнер.jpg"
+                  alt="Фото дизайнера UI"
+                />
+              </picture>
               <h3 class="team-member-name">Иван Николаев</h3>
               <p class="team-member-profession">UI Designer</p>
               <ul class="links list">

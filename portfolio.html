@@ -85,7 +85,7 @@
       <!--Главный заголовок, который нужно скрыть-->
       <h1 class="visually-hidden">Портфолио</h1>
       <section class="section section-portfolio">
-        <div class="container">
+        <div class="portfolio-container">
           <ul class="button-list list">
             <li class="button-item">
               <button type="button" class="button">Все</button>
@@ -104,18 +104,40 @@
             </li>
           </ul>
         </div>
-        <div class="container">
+        <div class="portfolio-container">
           <ul class="portfolio list">
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/Desktop_img/480-Portfolio_1.jpg"
-                    alt="Изображение ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_1.jpg    1x,
+                        ./images/JPG/1200-Portfolio_1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_1.jpg    1x,
+                        ./images/JPG/768-Portfolio_1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_1.jpg    1x,
+                        ./images/JPG/480-Portfolio_1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_1.jpg"
+                      alt="Изображение ноутбука"
+                    />
+                  </picture>
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -132,13 +154,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/img_Постер_New_Orleans.png"
-                    alt="Игра в баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_2.jpg    1x,
+                        ./images/JPG/1200-Portfolio_2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_2.jpg    1x,
+                        ./images/JPG/768-Portfolio_2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_2.jpg    1x,
+                        ./images/JPG/480-Portfolio_2@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_2.jpg"
+                      alt="Игра в баскетбол"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -157,13 +200,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/img_Ресторан_Seafood.png"
-                    alt="Лого ресторана Сифуд"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_3.jpg    1x,
+                        ./images/JPG/1200-Portfolio_3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_3.jpg    1x,
+                        ./images/JPG/768-Portfolio_3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_3.jpg    1x,
+                        ./images/JPG/480-Portfolio_3@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_3.jpg"
+                      alt="Лого ресторана Сифуд"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -180,13 +244,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/img_Prime.png"
-                    alt="Изображение наушников"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_4.jpg    1x,
+                        ./images/JPG/1200-Portfolio_4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_4.jpg    1x,
+                        ./images/JPG/768-Portfolio_4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_4.jpg    1x,
+                        ./images/JPG/480-Portfolio_4@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/480-Portfolio_4.jpg"
+                      alt="Изображение наушников"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -203,13 +288,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/img_Boxes.png"
-                    alt="Изображение 2 коробок"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_5.jpg    1x,
+                        ./images/JPG/1200-Portfolio_5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_5.jpg    1x,
+                        ./images/JPG/768-Portfolio_5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_5.jpg    1x,
+                        ./images/JPG/480-Portfolio_5@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_5.jpg"
+                      alt="Изображение 2 коробок"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -226,13 +332,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/Monitor.png"
-                    alt="Изображение монитора"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_6(Monitor).jpg    1x,
+                        ./images/JPG/1200-Portfolio_6(Monitor)@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_6.jpg    1x,
+                        ./images/JPG/768-Portfolio_6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_6.jpg    1x,
+                        ./images/JPG/480-Portfolio_6@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_6.jpg"
+                      alt="Изображение монитора"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -249,13 +376,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/img_Limited_Edition.png"
-                    alt="Изображение книги"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_7.jpg    1x,
+                        ./images/JPG/1200-Portfolio_7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_7.jpg    1x,
+                        ./images/JPG/768-Portfolio_7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_7.jpg    1x,
+                        ./images/JPG/480-Portfolio_7@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_7.jpg"
+                      alt="Изображение книги"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -272,13 +420,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/img_LAB.png"
-                    alt="Изображение ярлыка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_8.jpg    1x,
+                        ./images/JPG/1200-Portfolio_8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_8.jpg    1x,
+                        ./images/JPG/768-Portfolio_8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_8.jpg    1x,
+                        ./images/JPG/480-Portfolio_8@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_8.jpg"
+                      alt="Изображение ярлыка"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения
@@ -295,13 +464,34 @@
             <li class="portfolio-item">
               <a class="portfolio-item-card">
                 <div class="portfolio-image-overlay">
-                  <img
-                    class="portfolio-image"
-                    src="./images/Laptop.png"
-                    alt="Изображение ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/JPG/1200-Portfolio_9(Laptop).jpg    1x,
+                        ./images/JPG/1200-Portfolio_9(Laptop)@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/768-Portfolio_9.jpg    1x,
+                        ./images/JPG/768-Portfolio_9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/JPG/480-Portfolio_9.jpg    1x,
+                        ./images/JPG/480-Portfolio_9@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/JPG/480-Portfolio_9.jpg"
+                      alt="Изображение ноутбука"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-item-presentation">
                       Технокряк это современная площадка распространения

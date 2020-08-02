@@ -363,6 +363,10 @@ img {
   }
 }
 
+.portfolio-container {
+  padding: 60px 15px 20px;
+}
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -373,16 +377,7 @@ img {
   padding: 6px 22px;
   color: #212121;
   cursor: pointer;
-}
-
-.button-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .button-item:not(:last-child) {
-    margin-right: 30px;
-  }
+  margin: 8px;
 }
 
 .button-list {
@@ -391,9 +386,22 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
-  padding-left: 0;
-  margin-right: 0;
+  margin: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
 }
 
 .button-list :hover,
@@ -561,9 +569,6 @@ img {
     padding-bottom: 60px;
   }
   .block-join {
-    padding-bottom: 60px;
-  }
-  .block-sign {
     padding-bottom: 60px;
   }
 }
