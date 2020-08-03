@@ -27,14 +27,6 @@
     }
   }
 
-  .container {
-    padding: 118px 0;
-
-    @media screen and (min-width: 1200px) {
-      padding: 200px 0;
-    }
-  }
-
   @media screen and (min-width: 768px) {
     height: 400px;
     width: 768px;
@@ -69,6 +61,14 @@
           $brg-secondary
         ),
         url(.././images/1200-Hero@2x.jpg);
+    }
+  }
+
+  .container {
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
     }
   }
 }

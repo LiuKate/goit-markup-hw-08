@@ -172,7 +172,7 @@
                   Отправить
                 </button>
               </form>
-              <span class="close-form"
+              <span class="close-form" data-modal-close
                 ><svg class="close-form-icon" width="11" height="11">
                   <use href="./images/Sprite.svg#icon-close-form"></use></svg
               ></span>
@@ -296,8 +296,13 @@
                   "
                   media="(min-width: 1200px)"
                 />
-                <source srcseJPG/768-Продукт_Дизайнер@2x.jpg 2x "
-                media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/JPG/768-Продукт_Дизайнер.jpg    1x,
+                    ./images/JPG/768-Продукт_Дизайнер@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
                     ./images/JPG/480-Продукт_Дизайнер.jpg    1x,
@@ -477,8 +482,8 @@
                 />
                 <source
                   srcset="
-                    ./images/JPG/768-UI_Дизайнер.jpg     1x,
-                    ./images/JPG/768-UI_Дизайнерг@2x.jpg 2x
+                    ./images/JPG/768-UI_Дизайнер.jpg    1x,
+                    ./images/JPG/768-UI_Дизайнер@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />

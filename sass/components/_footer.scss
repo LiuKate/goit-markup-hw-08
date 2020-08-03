@@ -119,6 +119,8 @@
     width: 100%;
     max-width: 450px;
     height: 50px;
+    text-indent: 20px;
+    color: $white-footer;
 
     @media screen and (max-width: 1199px) {
       margin: 20px 0;
